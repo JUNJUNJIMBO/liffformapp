@@ -62,7 +62,68 @@
       else button.removeAttribute("aria-current");
     });
     watch(visible);
+    layoutJustified();
   }
+
+  function tileRatio(tile) {
+    const img = tile.querySelector("img");
+    const w = Number(img.getAttribute("width"));
+    const h = Number(img.getAttribute("height"));
+    return w > 0 && h > 0 ? w / h : 1.5;
+  }
+
+  function layoutJustified() {
+    const width = grid.clientWidth;
+    if (!width || !visible.length) return;
+    const gap = parseFloat(getComputedStyle(grid).columnGap) || 28;
+    const phone = window.matchMedia("(max-width: 650px)").matches;
+    const cols = phone ? 2 : 3;
+    const target = (width - gap * (cols - 1)) / (cols * (phone ? 0.72 : 0.92));
+    const minCount = 2;
+    const maxCount = phone ? 3 : 4;
+    const items = visible.map((el) => ({ el, ratio: tileRatio(el) }));
+    let row = [];
+    let sum = 0;
+
+    function place(rowItems, height, fill) {
+      const gaps = gap * Math.max(0, rowItems.length - 1);
+      let used = 0;
+      rowItems.forEach((item, index) => {
+        let itemWidth = height * item.ratio;
+        if (fill && index === rowItems.length - 1) itemWidth = Math.max(1, width - gaps - used);
+        else itemWidth = Math.max(1, Math.round(itemWidth));
+        if (!(fill && index === rowItems.length - 1)) used += itemWidth;
+        item.el.style.width = itemWidth + "px";
+        item.el.style.height = Math.round(height) + "px";
+      });
+    }
+
+    function commit(rowItems, ratioSum, isLast) {
+      const gaps = gap * Math.max(0, rowItems.length - 1);
+      let height = (width - gaps) / ratioSum;
+      let fill = true;
+      if (isLast && height > target * 1.15) {
+        height = target;
+        fill = false;
+      }
+      place(rowItems, height, fill);
+    }
+
+    items.forEach((item) => {
+      row.push(item);
+      sum += item.ratio;
+      const height = (width - gap * (row.length - 1)) / sum;
+      const ready = row.length >= minCount && height <= target;
+      if (ready || row.length >= maxCount) {
+        commit(row, sum, false);
+        row = [];
+        sum = 0;
+      }
+    });
+    if (row.length) commit(row, sum, true);
+  }
+
+  window.addEventListener("resize", layoutJustified);
 
   filters.forEach((button) => {
     button.addEventListener("click", () => {

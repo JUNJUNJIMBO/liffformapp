@@ -233,10 +233,11 @@ body.is-locked .site-head {
 }
 
 .works {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
   gap: var(--gap);
-  align-items: start;
   width: min(1680px, calc(100% - 64px));
   margin: 0 auto;
 }
@@ -244,6 +245,7 @@ body.is-locked .site-head {
 .tile {
   position: relative;
   display: block;
+  flex: 0 0 auto;
   overflow: hidden;
   background: #eee;
   color: #fff;
@@ -252,14 +254,6 @@ body.is-locked .site-head {
 .tile[hidden],
 body[data-view="selected"] .tile[data-selected="0"] {
   display: none;
-}
-
-.tile.is-l {
-  aspect-ratio: 3 / 2;
-}
-
-.tile.is-p {
-  aspect-ratio: 2 / 3;
 }
 
 .tile img {
@@ -273,31 +267,6 @@ body[data-view="selected"] .tile[data-selected="0"] {
 .tile:hover img,
 .tile:focus-visible img {
   transform: scale(1.045);
-}
-
-body[data-view="all"] .works,
-body[data-view="ceremony"] .works,
-body[data-view="couple"] .works,
-body[data-view="reception"] .works {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: start;
-}
-
-body[data-view="all"] .tile,
-body[data-view="ceremony"] .tile,
-body[data-view="couple"] .tile,
-body[data-view="reception"] .tile {
-  grid-column: auto;
-  aspect-ratio: auto;
-  background: transparent;
-}
-
-body[data-view="all"] .tile img,
-body[data-view="ceremony"] .tile img,
-body[data-view="couple"] .tile img,
-body[data-view="reception"] .tile img {
-  height: auto;
-  object-fit: contain;
 }
 
 .tile.is-in {
@@ -529,18 +498,8 @@ body[data-view="reception"] .tile img {
 }
 
 @media (max-width: 800px) {
-  .works,
-  body[data-view="all"] .works,
-  body[data-view="ceremony"] .works,
-  body[data-view="couple"] .works,
-  body[data-view="reception"] .works {
-    grid-template-columns: 1fr 1fr;
+  .works {
     width: calc(100% - 32px);
-  }
-
-  .tile.is-l,
-  .tile.is-p {
-    grid-column: span 1;
   }
 }
 
@@ -568,12 +527,7 @@ body[data-view="reception"] .tile img {
     padding-top: 168px;
   }
 
-  .works,
-  body[data-view="all"] .works,
-  body[data-view="ceremony"] .works,
-  body[data-view="couple"] .works,
-  body[data-view="reception"] .works {
-    grid-template-columns: 1fr 1fr;
+  .works {
     gap: 12px;
     width: calc(100% - 10%);
   }
