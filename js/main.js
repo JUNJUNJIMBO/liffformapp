@@ -5,7 +5,6 @@
   const filters = [...document.querySelectorAll("[data-filter]")];
   const viewer = document.getElementById("viewer");
   const viewerImg = document.getElementById("viewer-img");
-  const viewerCaption = document.getElementById("viewer-caption");
   const viewerCount = document.getElementById("viewer-count");
   let current = "selected";
   let visible = [];
@@ -85,7 +84,6 @@
     const source = tile.querySelector("img");
     viewerImg.src = source.currentSrc || source.src;
     viewerImg.alt = source.alt;
-    viewerCaption.textContent = source.alt;
     viewerCount.textContent = String(viewerIndex + 1).padStart(2, "0") + "  /  " + String(visible.length).padStart(2, "0");
   }
 
@@ -120,6 +118,32 @@
   viewer.addEventListener("keydown", (event) => {
     if (event.key === "ArrowRight") step(1);
     if (event.key === "ArrowLeft") step(-1);
+  });
+
+  let swipeX = 0;
+  let swipeY = 0;
+  let trackingSwipe = false;
+
+  viewer.addEventListener("touchstart", (event) => {
+    if (!window.matchMedia("(max-width: 650px)").matches) return;
+    if (event.touches.length !== 1 || event.target.closest("button")) return;
+    swipeX = event.touches[0].clientX;
+    swipeY = event.touches[0].clientY;
+    trackingSwipe = true;
+  }, { passive: true });
+
+  viewer.addEventListener("touchend", (event) => {
+    if (!trackingSwipe) return;
+    trackingSwipe = false;
+    const touch = event.changedTouches[0];
+    const dx = touch.clientX - swipeX;
+    const dy = touch.clientY - swipeY;
+    if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+    step(dx < 0 ? 1 : -1);
+  }, { passive: true });
+
+  viewer.addEventListener("touchcancel", () => {
+    trackingSwipe = false;
   });
 
   const hashMap = {

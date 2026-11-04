@@ -5,7 +5,6 @@
   --quiet: #f3f2ef;
   --dark: #2c2c2c;
   --line: rgba(92, 92, 92, 0.2);
-  --veil: linear-gradient(to top, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.08) 52%, transparent);
   --serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
   --display: "Cormorant Garamond", "Noto Serif JP", serif;
   --gap: 28px;
@@ -290,29 +289,6 @@ body[data-view="reception"] .tile img {
   object-fit: contain;
 }
 
-.veil {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  padding: 22px 24px;
-  background: var(--veil);
-  color: #fff;
-  opacity: 0;
-  transition: opacity 0.55s ease;
-}
-
-.veil span {
-  font-family: var(--display);
-  font-size: 16px;
-  letter-spacing: 0.28em;
-}
-
-.tile:hover .veil,
-.tile:focus-visible .veil {
-  opacity: 1;
-}
-
 .tile.is-in {
   animation: rise 1.05s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
@@ -532,13 +508,6 @@ body[data-view="reception"] .tile img {
   background: #111;
 }
 
-#viewer-caption {
-  margin: 12px 0 0;
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  line-height: 1.8;
-}
-
 .viewer-bar button {
   transition: opacity 0.3s ease;
 }
@@ -566,11 +535,11 @@ body[data-view="reception"] .tile img {
 
 @media (max-width: 650px) {
   .site-head {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
-    gap: 18px;
-    padding: 22px 5% 0;
-    background: transparent;
+    gap: 14px;
+    padding: 16px 5% 12px;
+    background: #fff;
   }
 
   .site-nav ul {
@@ -650,10 +619,6 @@ body[data-view="reception"] .tile img {
 }
 
 @media (hover: none) {
-  .veil {
-    display: none;
-  }
-
   .tile:hover img,
   .tile:focus-visible img {
     transform: none;
@@ -668,7 +633,6 @@ body[data-view="reception"] .tile img {
   .curtain,
   .tile.is-in,
   .tile img,
-  .veil,
   .site-nav button,
   .site-foot a,
   .site-foot a::after {
