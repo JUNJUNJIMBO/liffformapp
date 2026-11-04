@@ -19,7 +19,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 248px;
+  scroll-padding-top: 24px;
 }
 
 body {
@@ -101,6 +101,17 @@ a {
   gap: 24px;
   padding: 28px var(--side) 16px;
   background: #fff;
+  transition: transform 0.45s ease;
+}
+
+body.is-header-hidden .site-head,
+body.is-locked .site-head {
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+body.is-locked .site-head {
+  transition: none;
 }
 
 .brand {
@@ -174,7 +185,7 @@ a {
 #profile,
 #contact,
 #source {
-  scroll-margin-top: 248px;
+  scroll-margin-top: 24px;
 }
 
 .profile {
@@ -634,6 +645,7 @@ body[data-view="reception"] .tile img {
   .curtain,
   .tile.is-in,
   .tile img,
+  .site-head,
   .site-nav button,
   .site-foot a,
   .site-foot a::after {

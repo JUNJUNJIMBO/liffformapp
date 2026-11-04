@@ -92,6 +92,7 @@
     renderViewer();
     if (!viewer.open) viewer.showModal();
     document.body.classList.add("is-locked");
+    syncHeader();
   }
 
   grid.addEventListener("click", (event) => {
@@ -113,6 +114,7 @@
   viewer.querySelector("[data-close]").addEventListener("click", () => viewer.close());
   viewer.addEventListener("close", () => {
     document.body.classList.remove("is-locked");
+    syncHeader();
     if (lastTrigger) lastTrigger.focus();
   });
   viewer.addEventListener("keydown", (event) => {
@@ -145,6 +147,24 @@
   viewer.addEventListener("touchcancel", () => {
     trackingSwipe = false;
   });
+
+  const header = document.querySelector(".site-head");
+  let lastScrollY = window.scrollY;
+
+  function syncHeader() {
+    const y = window.scrollY;
+    const delta = y - lastScrollY;
+    if (!document.body.classList.contains("is-locked")) {
+      if (y <= 12) document.body.classList.remove("is-header-hidden");
+      else if (delta > 4) document.body.classList.add("is-header-hidden");
+      else if (delta < -4) document.body.classList.remove("is-header-hidden");
+    }
+    lastScrollY = y;
+    const away = document.body.classList.contains("is-locked") || document.body.classList.contains("is-header-hidden");
+    header.inert = away;
+  }
+
+  window.addEventListener("scroll", syncHeader, { passive: true });
 
   const hashMap = {
     "#ceremony": "ceremony",
