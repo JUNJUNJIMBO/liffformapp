@@ -115,11 +115,11 @@ a {
 }
 
 .brand strong {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 24px;
-  letter-spacing: 0.32em;
-  line-height: 1;
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.14em;
+  line-height: 1.15;
 }
 
 .brand em {
