@@ -122,12 +122,6 @@
     if (event.key === "ArrowLeft") step(-1);
   });
 
-  const form = document.getElementById("contact-form");
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    document.getElementById("form-status").textContent = "送信先が未設定のため、この内容は届きません。連絡先が決まり次第、この欄を差し替えてください。";
-  });
-
   const hashMap = {
     "#ceremony": "ceremony",
     "#couple": "couple",
