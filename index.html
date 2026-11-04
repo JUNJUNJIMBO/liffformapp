@@ -3,191 +3,405 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>工藤 隆久｜婚礼写真</title>
-  <meta name="description" content="工藤 隆久の婚礼写真。2025年4月29日、ホテルニューグランド レインボーボールの一日。出典は Time Colors のギャラリーです。">
-  <meta name="theme-color" content="#f2efe9">
+  <title>工藤 — 婚礼</title>
+  <meta name="description" content="工藤 隆久の婚礼写真。2025年4月29日、ホテルニューグランド レインボーボール。出典は Time Colors のギャラリーです。">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Noto+Serif+JP:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" as="image" href="assets/photos/0059-1.jpg">
-  <script>document.documentElement.classList.add("js")</script>
-  <noscript>
-    <style>
-      .opening { display: none !important; }
-      body.is-opening .site-header { opacity: 1 !important; visibility: visible !important; }
-      body.is-light .mark, body.is-light .menu-trigger { color: rgba(22, 19, 16, 0.86) !important; }
-    </style>
-  </noscript>
 </head>
-<body class="is-opening is-light">
-  <a class="skip" href="#work">作品へ進む</a>
-  <header class="site-header">
-    <a class="mark" href="#slides">
-      <small>KUDO</small>
+<body data-view="selected">
+  <div class="curtain" id="curtain"></div>
+  <a class="skip" href="#grid">写真へ</a>
+  <header class="site-head">
+    <a class="brand" href="#selected">
       <strong>工藤</strong>
+      <em>Wedding</em>
     </a>
-    <button type="button" class="menu-trigger" aria-expanded="false" aria-controls="site-nav">
-      <span class="menu-label">MENU</span>
-    </button>
-    <nav id="site-nav" class="nav">
-      <div class="nav-inner">
-        <ul>
-          <li><a href="#work">WORK</a></li>
-          <li><a href="#day">THE DAY</a></li>
-          <li><a href="#approach">APPROACH</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-        <p>Wedding photography.<br>Hotel New Grand, 2025.04.29</p>
-      </div>
+    <nav class="site-nav" aria-label="作品">
+      <ul>
+        <li><button type="button" data-filter="selected" aria-current="page">SELECTED</button></li>
+        <li><button type="button" data-filter="ceremony">CEREMONY</button></li>
+        <li><button type="button" data-filter="couple">COUPLE</button></li>
+        <li><button type="button" data-filter="reception">RECEPTION</button></li>
+        <li><button type="button" data-filter="all">THE DAY</button></li>
+      </ul>
     </nav>
   </header>
-
-  <div id="opening" class="opening">
-    <div class="opening-still">
-      <img src="assets/photos/0059-1.jpg" alt="参列者のあいだ、青い通路を進む新婦。チャペルでの挙式。" width="1680" height="1120" loading="eager" decoding="async" fetchpriority="high">
+  <main class="site-main">
+    <div class="works" id="grid">
+      <a class="tile is-p" href="assets/photos/0008-1.jpg" data-photo="0008-1.jpg" data-group="archive" data-selected="1" data-order="0">
+        <img src="assets/photos/0008-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="eager" fetchpriority="high">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-l" href="assets/photos/0011-1.jpg" data-photo="0011-1.jpg" data-group="archive" data-selected="1" data-order="1">
+        <img src="assets/photos/0011-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="eager" fetchpriority="high">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-p" href="assets/photos/0064-1.jpg" data-photo="0064-1.jpg" data-group="ceremony" data-selected="1" data-order="2">
+        <img src="assets/photos/0064-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0059-1.jpg" data-photo="0059-1.jpg" data-group="ceremony" data-selected="1" data-order="3">
+        <img src="assets/photos/0059-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0046-1.jpg" data-photo="0046-1.jpg" data-group="couple" data-selected="1" data-order="4">
+        <img src="assets/photos/0046-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-p" href="assets/photos/0038-1.jpg" data-photo="0038-1.jpg" data-group="couple" data-selected="1" data-order="5">
+        <img src="assets/photos/0038-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0074-1.jpg" data-photo="0074-1.jpg" data-group="reception" data-selected="1" data-order="6">
+        <img src="assets/photos/0074-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-p" href="assets/photos/0111.jpg" data-photo="0111.jpg" data-group="couple" data-selected="1" data-order="7">
+        <img src="assets/photos/0111.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0085-1.jpg" data-photo="0085-1.jpg" data-group="reception" data-selected="1" data-order="8">
+        <img src="assets/photos/0085-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0076-1.jpg" data-photo="0076-1.jpg" data-group="reception" data-selected="1" data-order="9">
+        <img src="assets/photos/0076-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-p" href="assets/photos/0113.jpg" data-photo="0113.jpg" data-group="couple" data-selected="1" data-order="10">
+        <img src="assets/photos/0113.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0107.jpg" data-photo="0107.jpg" data-group="couple" data-selected="1" data-order="11">
+        <img src="assets/photos/0107.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0033-1.jpg" data-photo="0033-1.jpg" data-group="couple" data-selected="1" data-order="12">
+        <img src="assets/photos/0033-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-p" href="assets/photos/0110.jpg" data-photo="0110.jpg" data-group="couple" data-selected="1" data-order="13">
+        <img src="assets/photos/0110.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0068-1.jpg" data-photo="0068-1.jpg" data-group="ceremony" data-selected="1" data-order="14">
+        <img src="assets/photos/0068-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0003-1.jpg" data-photo="0003-1.jpg" data-group="archive" data-selected="1" data-order="15">
+        <img src="assets/photos/0003-1.jpg" alt="館。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>館</span></span>
+      </a><a class="tile is-l" href="assets/photos/0001-1.jpg" data-photo="0001-1.jpg" data-group="archive" data-selected="0" data-order="16">
+        <img src="assets/photos/0001-1.jpg" alt="館。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>館</span></span>
+      </a><a class="tile is-l" href="assets/photos/0002-1.jpg" data-photo="0002-1.jpg" data-group="archive" data-selected="0" data-order="17">
+        <img src="assets/photos/0002-1.jpg" alt="館。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>館</span></span>
+      </a><a class="tile is-p" href="assets/photos/0004-1.jpg" data-photo="0004-1.jpg" data-group="archive" data-selected="0" data-order="18">
+        <img src="assets/photos/0004-1.jpg" alt="館。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>館</span></span>
+      </a><a class="tile is-l" href="assets/photos/0005-1.jpg" data-photo="0005-1.jpg" data-group="archive" data-selected="0" data-order="19">
+        <img src="assets/photos/0005-1.jpg" alt="館。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>館</span></span>
+      </a><a class="tile is-p" href="assets/photos/0006-1.jpg" data-photo="0006-1.jpg" data-group="archive" data-selected="0" data-order="20">
+        <img src="assets/photos/0006-1.jpg" alt="館。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>館</span></span>
+      </a><a class="tile is-l" href="assets/photos/0007-1.jpg" data-photo="0007-1.jpg" data-group="archive" data-selected="0" data-order="21">
+        <img src="assets/photos/0007-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-p" href="assets/photos/0009-1.jpg" data-photo="0009-1.jpg" data-group="archive" data-selected="0" data-order="22">
+        <img src="assets/photos/0009-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-p" href="assets/photos/0010-1.jpg" data-photo="0010-1.jpg" data-group="archive" data-selected="0" data-order="23">
+        <img src="assets/photos/0010-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-l" href="assets/photos/0012-1.jpg" data-photo="0012-1.jpg" data-group="archive" data-selected="0" data-order="24">
+        <img src="assets/photos/0012-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-l" href="assets/photos/0013-1.jpg" data-photo="0013-1.jpg" data-group="archive" data-selected="0" data-order="25">
+        <img src="assets/photos/0013-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-l" href="assets/photos/0014-1.jpg" data-photo="0014-1.jpg" data-group="archive" data-selected="0" data-order="26">
+        <img src="assets/photos/0014-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-p" href="assets/photos/0015-1.jpg" data-photo="0015-1.jpg" data-group="archive" data-selected="0" data-order="27">
+        <img src="assets/photos/0015-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-l" href="assets/photos/0016-1.jpg" data-photo="0016-1.jpg" data-group="archive" data-selected="0" data-order="28">
+        <img src="assets/photos/0016-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-l" href="assets/photos/0017-1.jpg" data-photo="0017-1.jpg" data-group="archive" data-selected="0" data-order="29">
+        <img src="assets/photos/0017-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-l" href="assets/photos/0018-1.jpg" data-photo="0018-1.jpg" data-group="archive" data-selected="0" data-order="30">
+        <img src="assets/photos/0018-1.jpg" alt="支度。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>支度</span></span>
+      </a><a class="tile is-l" href="assets/photos/0019-1.jpg" data-photo="0019-1.jpg" data-group="couple" data-selected="0" data-order="31">
+        <img src="assets/photos/0019-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0020-1.jpg" data-photo="0020-1.jpg" data-group="couple" data-selected="0" data-order="32">
+        <img src="assets/photos/0020-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-p" href="assets/photos/0021-1.jpg" data-photo="0021-1.jpg" data-group="couple" data-selected="0" data-order="33">
+        <img src="assets/photos/0021-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0022-1.jpg" data-photo="0022-1.jpg" data-group="couple" data-selected="0" data-order="34">
+        <img src="assets/photos/0022-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0023-1.jpg" data-photo="0023-1.jpg" data-group="couple" data-selected="0" data-order="35">
+        <img src="assets/photos/0023-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0024-1.jpg" data-photo="0024-1.jpg" data-group="couple" data-selected="0" data-order="36">
+        <img src="assets/photos/0024-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0025-1.jpg" data-photo="0025-1.jpg" data-group="couple" data-selected="0" data-order="37">
+        <img src="assets/photos/0025-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0026-1.jpg" data-photo="0026-1.jpg" data-group="couple" data-selected="0" data-order="38">
+        <img src="assets/photos/0026-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0027-1.jpg" data-photo="0027-1.jpg" data-group="couple" data-selected="0" data-order="39">
+        <img src="assets/photos/0027-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0028-1.jpg" data-photo="0028-1.jpg" data-group="couple" data-selected="0" data-order="40">
+        <img src="assets/photos/0028-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0029-1.jpg" data-photo="0029-1.jpg" data-group="couple" data-selected="0" data-order="41">
+        <img src="assets/photos/0029-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0030-1.jpg" data-photo="0030-1.jpg" data-group="couple" data-selected="0" data-order="42">
+        <img src="assets/photos/0030-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-p" href="assets/photos/0031-1.jpg" data-photo="0031-1.jpg" data-group="couple" data-selected="0" data-order="43">
+        <img src="assets/photos/0031-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-p" href="assets/photos/0032-1.jpg" data-photo="0032-1.jpg" data-group="couple" data-selected="0" data-order="44">
+        <img src="assets/photos/0032-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0034-1.jpg" data-photo="0034-1.jpg" data-group="couple" data-selected="0" data-order="45">
+        <img src="assets/photos/0034-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0035-1.jpg" data-photo="0035-1.jpg" data-group="couple" data-selected="0" data-order="46">
+        <img src="assets/photos/0035-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0036-1.jpg" data-photo="0036-1.jpg" data-group="couple" data-selected="0" data-order="47">
+        <img src="assets/photos/0036-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0037-1.jpg" data-photo="0037-1.jpg" data-group="couple" data-selected="0" data-order="48">
+        <img src="assets/photos/0037-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0039-1.jpg" data-photo="0039-1.jpg" data-group="couple" data-selected="0" data-order="49">
+        <img src="assets/photos/0039-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0040-1.jpg" data-photo="0040-1.jpg" data-group="couple" data-selected="0" data-order="50">
+        <img src="assets/photos/0040-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0041-1.jpg" data-photo="0041-1.jpg" data-group="couple" data-selected="0" data-order="51">
+        <img src="assets/photos/0041-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0042-1.jpg" data-photo="0042-1.jpg" data-group="couple" data-selected="0" data-order="52">
+        <img src="assets/photos/0042-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-p" href="assets/photos/0043-1.jpg" data-photo="0043-1.jpg" data-group="couple" data-selected="0" data-order="53">
+        <img src="assets/photos/0043-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-p" href="assets/photos/0044-1.jpg" data-photo="0044-1.jpg" data-group="couple" data-selected="0" data-order="54">
+        <img src="assets/photos/0044-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0045-1.jpg" data-photo="0045-1.jpg" data-group="couple" data-selected="0" data-order="55">
+        <img src="assets/photos/0045-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1119" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0047-1.jpg" data-photo="0047-1.jpg" data-group="couple" data-selected="0" data-order="56">
+        <img src="assets/photos/0047-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0048-1.jpg" data-photo="0048-1.jpg" data-group="couple" data-selected="0" data-order="57">
+        <img src="assets/photos/0048-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-p" href="assets/photos/0049-1.jpg" data-photo="0049-1.jpg" data-group="couple" data-selected="0" data-order="58">
+        <img src="assets/photos/0049-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0050-1.jpg" data-photo="0050-1.jpg" data-group="couple" data-selected="0" data-order="59">
+        <img src="assets/photos/0050-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0051-1.jpg" data-photo="0051-1.jpg" data-group="couple" data-selected="0" data-order="60">
+        <img src="assets/photos/0051-1.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0052-1.jpg" data-photo="0052-1.jpg" data-group="ceremony" data-selected="0" data-order="61">
+        <img src="assets/photos/0052-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0053-1.jpg" data-photo="0053-1.jpg" data-group="ceremony" data-selected="0" data-order="62">
+        <img src="assets/photos/0053-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0054-1.jpg" data-photo="0054-1.jpg" data-group="ceremony" data-selected="0" data-order="63">
+        <img src="assets/photos/0054-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0055-1.jpg" data-photo="0055-1.jpg" data-group="ceremony" data-selected="0" data-order="64">
+        <img src="assets/photos/0055-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0056-1.jpg" data-photo="0056-1.jpg" data-group="ceremony" data-selected="0" data-order="65">
+        <img src="assets/photos/0056-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0057-1.jpg" data-photo="0057-1.jpg" data-group="ceremony" data-selected="0" data-order="66">
+        <img src="assets/photos/0057-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0058-1.jpg" data-photo="0058-1.jpg" data-group="ceremony" data-selected="0" data-order="67">
+        <img src="assets/photos/0058-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0060-1.jpg" data-photo="0060-1.jpg" data-group="ceremony" data-selected="0" data-order="68">
+        <img src="assets/photos/0060-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0061-1.jpg" data-photo="0061-1.jpg" data-group="ceremony" data-selected="0" data-order="69">
+        <img src="assets/photos/0061-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0062-1.jpg" data-photo="0062-1.jpg" data-group="ceremony" data-selected="0" data-order="70">
+        <img src="assets/photos/0062-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0063-1.jpg" data-photo="0063-1.jpg" data-group="ceremony" data-selected="0" data-order="71">
+        <img src="assets/photos/0063-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0065-1.jpg" data-photo="0065-1.jpg" data-group="ceremony" data-selected="0" data-order="72">
+        <img src="assets/photos/0065-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0066-1.jpg" data-photo="0066-1.jpg" data-group="ceremony" data-selected="0" data-order="73">
+        <img src="assets/photos/0066-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0067-1.jpg" data-photo="0067-1.jpg" data-group="ceremony" data-selected="0" data-order="74">
+        <img src="assets/photos/0067-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0069-1.jpg" data-photo="0069-1.jpg" data-group="ceremony" data-selected="0" data-order="75">
+        <img src="assets/photos/0069-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-p" href="assets/photos/0070-1.jpg" data-photo="0070-1.jpg" data-group="ceremony" data-selected="0" data-order="76">
+        <img src="assets/photos/0070-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0071-1.jpg" data-photo="0071-1.jpg" data-group="ceremony" data-selected="0" data-order="77">
+        <img src="assets/photos/0071-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0072-1.jpg" data-photo="0072-1.jpg" data-group="ceremony" data-selected="0" data-order="78">
+        <img src="assets/photos/0072-1.jpg" alt="挙式。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>挙式</span></span>
+      </a><a class="tile is-l" href="assets/photos/0073-1.jpg" data-photo="0073-1.jpg" data-group="reception" data-selected="0" data-order="79">
+        <img src="assets/photos/0073-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0075-1.jpg" data-photo="0075-1.jpg" data-group="reception" data-selected="0" data-order="80">
+        <img src="assets/photos/0075-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-p" href="assets/photos/0077-1.jpg" data-photo="0077-1.jpg" data-group="reception" data-selected="0" data-order="81">
+        <img src="assets/photos/0077-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0078-1.jpg" data-photo="0078-1.jpg" data-group="reception" data-selected="0" data-order="82">
+        <img src="assets/photos/0078-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0079-1.jpg" data-photo="0079-1.jpg" data-group="reception" data-selected="0" data-order="83">
+        <img src="assets/photos/0079-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-p" href="assets/photos/0080-1.jpg" data-photo="0080-1.jpg" data-group="reception" data-selected="0" data-order="84">
+        <img src="assets/photos/0080-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0081-1.jpg" data-photo="0081-1.jpg" data-group="reception" data-selected="0" data-order="85">
+        <img src="assets/photos/0081-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0082-2.jpg" data-photo="0082-2.jpg" data-group="reception" data-selected="0" data-order="86">
+        <img src="assets/photos/0082-2.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0083-1.jpg" data-photo="0083-1.jpg" data-group="reception" data-selected="0" data-order="87">
+        <img src="assets/photos/0083-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0084-1.jpg" data-photo="0084-1.jpg" data-group="reception" data-selected="0" data-order="88">
+        <img src="assets/photos/0084-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0086-1.jpg" data-photo="0086-1.jpg" data-group="reception" data-selected="0" data-order="89">
+        <img src="assets/photos/0086-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0087-1.jpg" data-photo="0087-1.jpg" data-group="reception" data-selected="0" data-order="90">
+        <img src="assets/photos/0087-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0088-1.jpg" data-photo="0088-1.jpg" data-group="reception" data-selected="0" data-order="91">
+        <img src="assets/photos/0088-1.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0089.jpg" data-photo="0089.jpg" data-group="reception" data-selected="0" data-order="92">
+        <img src="assets/photos/0089.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-p" href="assets/photos/0090.jpg" data-photo="0090.jpg" data-group="reception" data-selected="0" data-order="93">
+        <img src="assets/photos/0090.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0091.jpg" data-photo="0091.jpg" data-group="reception" data-selected="0" data-order="94">
+        <img src="assets/photos/0091.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0092.jpg" data-photo="0092.jpg" data-group="reception" data-selected="0" data-order="95">
+        <img src="assets/photos/0092.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0093.jpg" data-photo="0093.jpg" data-group="reception" data-selected="0" data-order="96">
+        <img src="assets/photos/0093.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0094.jpg" data-photo="0094.jpg" data-group="reception" data-selected="0" data-order="97">
+        <img src="assets/photos/0094.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0095.jpg" data-photo="0095.jpg" data-group="reception" data-selected="0" data-order="98">
+        <img src="assets/photos/0095.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0096.jpg" data-photo="0096.jpg" data-group="reception" data-selected="0" data-order="99">
+        <img src="assets/photos/0096.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0097.jpg" data-photo="0097.jpg" data-group="reception" data-selected="0" data-order="100">
+        <img src="assets/photos/0097.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-p" href="assets/photos/0098.jpg" data-photo="0098.jpg" data-group="reception" data-selected="0" data-order="101">
+        <img src="assets/photos/0098.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0099.jpg" data-photo="0099.jpg" data-group="reception" data-selected="0" data-order="102">
+        <img src="assets/photos/0099.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0100.jpg" data-photo="0100.jpg" data-group="reception" data-selected="0" data-order="103">
+        <img src="assets/photos/0100.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0101.jpg" data-photo="0101.jpg" data-group="reception" data-selected="0" data-order="104">
+        <img src="assets/photos/0101.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0102.jpg" data-photo="0102.jpg" data-group="reception" data-selected="0" data-order="105">
+        <img src="assets/photos/0102.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0103.jpg" data-photo="0103.jpg" data-group="reception" data-selected="0" data-order="106">
+        <img src="assets/photos/0103.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-l" href="assets/photos/0104.jpg" data-photo="0104.jpg" data-group="reception" data-selected="0" data-order="107">
+        <img src="assets/photos/0104.jpg" alt="披露宴。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>披露宴</span></span>
+      </a><a class="tile is-p" href="assets/photos/0105.jpg" data-photo="0105.jpg" data-group="couple" data-selected="0" data-order="108">
+        <img src="assets/photos/0105.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0106.jpg" data-photo="0106.jpg" data-group="couple" data-selected="0" data-order="109">
+        <img src="assets/photos/0106.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-p" href="assets/photos/0108.jpg" data-photo="0108.jpg" data-group="couple" data-selected="0" data-order="110">
+        <img src="assets/photos/0108.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-l" href="assets/photos/0109.jpg" data-photo="0109.jpg" data-group="couple" data-selected="0" data-order="111">
+        <img src="assets/photos/0109.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1680" height="1120" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a><a class="tile is-p" href="assets/photos/0112.jpg" data-photo="0112.jpg" data-group="couple" data-selected="0" data-order="112">
+        <img src="assets/photos/0112.jpg" alt="ふたり。ホテルニューグランド レインボーボール、2025年4月29日。" width="1120" height="1680" decoding="async" loading="lazy">
+        <span class="veil"><span>ふたり</span></span>
+      </a>
     </div>
-    <div class="opening-unit">
-      <p class="opening-kicker">KUDO</p>
-      <h1>工藤</h1>
-      <p class="catch">式のあいだにある、<br>静かな時間を残します。</p>
-      <p class="catch en">The quiet hours inside a ceremony.</p>
-      <button type="button" class="enter line" id="enter">見る</button>
-    </div>
-  </div>
-
-  <main id="top">
-    <section id="slides" class="slides" aria-roledescription="カルーセル" aria-label="選んだ三枚" tabindex="-1">
-      <figure class="slide is-current pos-top">
-        <img src="assets/photos/0064-1.jpg" alt="祭壇の前で向き合う新郎新婦。" width="1120" height="1680" loading="eager" decoding="async" fetchpriority="high">
-        <figcaption class="slide-copy">
-          <p class="kicker">Ceremony</p>
-          <p class="slide-title">挙式</p>
-          <a class="line" href="#ceremony">このくくりを見る</a>
-        </figcaption>
-      </figure>
-      <figure class="slide" aria-hidden="true">
-        <img src="assets/photos/0046-1.jpg" alt="ホテルの前を歩くふたり。" width="1680" height="1120" loading="lazy" decoding="async">
-        <figcaption class="slide-copy">
-          <p class="kicker">Couple</p>
-          <p class="slide-title">ふたり</p>
-          <a class="line" href="#couple">このくくりを見る</a>
-        </figcaption>
-      </figure>
-      <figure class="slide" aria-hidden="true">
-        <img src="assets/photos/0074-1.jpg" alt="レインボーボールの会場全景。" width="1680" height="1120" loading="lazy" decoding="async">
-        <figcaption class="slide-copy">
-          <p class="kicker">Reception</p>
-          <p class="slide-title">披露宴</p>
-          <a class="line" href="#reception">このくくりを見る</a>
-        </figcaption>
-      </figure>
-      <div class="slide-ui">
-        <button type="button" data-dir="-1">Prev</button>
-        <p class="pager" aria-live="polite">01  /  03</p>
-        <button type="button" data-dir="1">Next</button>
-      </div>
-      <a class="scroll-hint" href="#work">Scroll</a>
-    </section>
-
-    <section class="essay" id="work" aria-labelledby="work-title">
-      <div class="split">
-        <h2 id="work-title">WORK</h2>
-        <div>
-          <p class="source-line">2025年4月29日、ホテルニューグランド　レインボーボール。<br>
-          一日を、準備・挙式・ふたり・披露宴に分けています。お二人のお名前は載せていません。<br>
-          撮影　工藤 隆久　／　出典　<a href="https://time-colors.com/wp/wedding-gallery/hotel-newgrand/rainbow-ball/2025-04-29/" target="_blank" rel="noopener noreferrer">Time Colors<span class="sr">（新しいタブ）</span></a></p>
-          <div class="group" id="preparation">
-            <h3>Preparation<span>準備</span></h3>
-            <div class="work-grid">
-              <figure><button type="button" class="frame" data-photo="0008-1.jpg"><img src="assets/photos/0008-1.jpg" alt="窓辺に掛けられたウェディングドレス。" width="1120" height="1680" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Dress</span><span>ドレス</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0011-1.jpg"><img src="assets/photos/0011-1.jpg" alt="窓の前で上着を整える新郎。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Groom</span><span>新郎</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0014-1.jpg"><img src="assets/photos/0014-1.jpg" alt="靴を履く手元。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Detail</span><span>手元</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0018-1.jpg"><img src="assets/photos/0018-1.jpg" alt="支度を受ける新婦。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Bride</span><span>新婦</span></figcaption></figure>
-            </div>
-          </div><div class="group" id="ceremony">
-            <h3>Ceremony<span>挙式</span></h3>
-            <div class="work-grid">
-              <figure><button type="button" class="frame" data-photo="0053-1.jpg"><img src="assets/photos/0053-1.jpg" alt="青いバージンロードが続くチャペル。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Chapel</span><span>チャペル</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0059-1.jpg"><img src="assets/photos/0059-1.jpg" alt="参列者のあいだ、青い通路を進む新婦。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Aisle</span><span>通路</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0064-1.jpg"><img src="assets/photos/0064-1.jpg" alt="祭壇の前で向き合う新郎新婦。" width="1120" height="1680" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Vows</span><span>誓い</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0068-1.jpg"><img src="assets/photos/0068-1.jpg" alt="窓辺に並んで座る新郎新婦。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Window</span><span>窓辺</span></figcaption></figure>
-            </div>
-          </div><div class="group" id="couple">
-            <h3>Couple<span>ふたり</span></h3>
-            <div class="work-grid">
-              <figure><button type="button" class="frame" data-photo="0033-1.jpg"><img src="assets/photos/0033-1.jpg" alt="大きな窓の光のなかに広がるドレス。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Light</span><span>光</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0041-1.jpg"><img src="assets/photos/0041-1.jpg" alt="館内で並ぶ新郎新婦。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Portrait</span><span>肖像</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0046-1.jpg"><img src="assets/photos/0046-1.jpg" alt="ホテルの前を歩くふたり。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Outside</span><span>館の前</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0113.jpg"><img src="assets/photos/0113.jpg" alt="赤い薔薇と、指輪の手元。" width="1120" height="1680" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Hands</span><span>手元</span></figcaption></figure>
-            </div>
-          </div><div class="group" id="reception">
-            <h3>Reception<span>披露宴</span></h3>
-            <div class="work-grid">
-              <figure><button type="button" class="frame" data-photo="0074-1.jpg"><img src="assets/photos/0074-1.jpg" alt="レインボーボールの会場全景。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Room</span><span>会場</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0076-1.jpg"><img src="assets/photos/0076-1.jpg" alt="卓上の薔薇とグラス。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Table</span><span>卓上</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0085-1.jpg"><img src="assets/photos/0085-1.jpg" alt="赤いカーテンの前を進む新郎新婦。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Entrance</span><span>入場</span></figcaption></figure>
-<figure><button type="button" class="frame" data-photo="0107.jpg"><img src="assets/photos/0107.jpg" alt="控室で並ぶ、色打掛姿の新婦と新郎。" width="1680" height="1120" loading="lazy" decoding="async"></button><figcaption><span class="cap-en">Later</span><span>控室</span></figcaption></figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="day" id="day" aria-labelledby="day-title">
-      <div class="day-head">
-        <h2 id="day-title">THE DAY</h2>
-        <p>この日の 113 点を、撮影された順に並べています。写真を押すと大きく見られます。</p>
-      </div>
-      <div class="seq">
-        <figure><button type="button" class="frame" data-photo="0001-1.jpg"><img src="assets/photos/0001-1.jpg" alt="1 / 113。館の外と、到着までの景色。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0002-1.jpg"><img src="assets/photos/0002-1.jpg" alt="2 / 113。館の外と、到着までの景色。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0003-1.jpg"><img src="assets/photos/0003-1.jpg" alt="3 / 113。館の外と、到着までの景色。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0004-1.jpg"><img src="assets/photos/0004-1.jpg" alt="4 / 113。館の外と、到着までの景色。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0005-1.jpg"><img src="assets/photos/0005-1.jpg" alt="5 / 113。館の外と、到着までの景色。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0006-1.jpg"><img src="assets/photos/0006-1.jpg" alt="6 / 113。館の外と、到着までの景色。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0007-1.jpg"><img src="assets/photos/0007-1.jpg" alt="7 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0008-1.jpg"><img src="assets/photos/0008-1.jpg" alt="8 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0009-1.jpg"><img src="assets/photos/0009-1.jpg" alt="9 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0010-1.jpg"><img src="assets/photos/0010-1.jpg" alt="10 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0011-1.jpg"><img src="assets/photos/0011-1.jpg" alt="11 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0012-1.jpg"><img src="assets/photos/0012-1.jpg" alt="12 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0013-1.jpg"><img src="assets/photos/0013-1.jpg" alt="13 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0014-1.jpg"><img src="assets/photos/0014-1.jpg" alt="14 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0015-1.jpg"><img src="assets/photos/0015-1.jpg" alt="15 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0016-1.jpg"><img src="assets/photos/0016-1.jpg" alt="16 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0017-1.jpg"><img src="assets/photos/0017-1.jpg" alt="17 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0018-1.jpg"><img src="assets/photos/0018-1.jpg" alt="18 / 113。支度の時間。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0019-1.jpg"><img src="assets/photos/0019-1.jpg" alt="19 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0020-1.jpg"><img src="assets/photos/0020-1.jpg" alt="20 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0021-1.jpg"><img src="assets/photos/0021-1.jpg" alt="21 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0022-1.jpg"><img src="assets/photos/0022-1.jpg" alt="22 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0023-1.jpg"><img src="assets/photos/0023-1.jpg" alt="23 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0024-1.jpg"><img src="assets/photos/0024-1.jpg" alt="24 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0025-1.jpg"><img src="assets/photos/0025-1.jpg" alt="25 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0026-1.jpg"><img src="assets/photos/0026-1.jpg" alt="26 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0027-1.jpg"><img src="assets/photos/0027-1.jpg" alt="27 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0028-1.jpg"><img src="assets/photos/0028-1.jpg" alt="28 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0029-1.jpg"><img src="assets/photos/0029-1.jpg" alt="29 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0030-1.jpg"><img src="assets/photos/0030-1.jpg" alt="30 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0031-1.jpg"><img src="assets/photos/0031-1.jpg" alt="31 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0032-1.jpg"><img src="assets/photos/0032-1.jpg" alt="32 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0033-1.jpg"><img src="assets/photos/0033-1.jpg" alt="33 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0034-1.jpg"><img src="assets/photos/0034-1.jpg" alt="34 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0035-1.jpg"><img src="assets/photos/0035-1.jpg" alt="35 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0036-1.jpg"><img src="assets/photos/0036-1.jpg" alt="36 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0037-1.jpg"><img src="assets/photos/0037-1.jpg" alt="37 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0038-1.jpg"><img src="assets/photos/0038-1.jpg" alt="38 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0039-1.jpg"><img src="assets/photos/0039-1.jpg" alt="39 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0040-1.jpg"><img src="assets/photos/0040-1.jpg" alt="40 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0041-1.jpg"><img src="assets/photos/0041-1.jpg" alt="41 / 113。控室と館内の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0042-1.jpg"><img src="assets/photos/0042-1.jpg" alt="42 / 113。館の前とみなと。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0043-1.jpg"><img src="assets/photos/0043-1.jpg" alt="43 / 113。館の前とみなと。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0044-1.jpg"><img src="assets/photos/0044-1.jpg" alt="44 / 113。館の前とみなと。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0045-1.jpg"><img src="assets/photos/0045-1.jpg" alt="45 / 113。館の前とみなと。ホテルニューグランド、2025年4月29日。" width="1680" height="1119" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0046-1.jpg"><img src="assets/photos/0046-1.jpg" alt="46 / 113。館の前とみなと。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0047-1.jpg"><img src="assets/photos/0047-1.jpg" alt="47 / 113。館の前とみなと。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0048-1.jpg"><img src="assets/photos/0048-1.jpg" alt="48 / 113。館の前とみなと。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0049-1.jpg"><img src="assets/photos/0049-1.jpg" alt="49 / 113。館の前とみなと。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0050-1.jpg"><img src="assets/photos/0050-1.jpg" alt="50 / 113。館の前とみなと。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0051-1.jpg"><img src="assets/photos/0051-1.jpg" alt="51 / 113。館の前とみなと。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0052-1.jpg"><img src="assets/photos/0052-1.jpg" alt="52 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0053-1.jpg"><img src="assets/photos/0053-1.jpg" alt="53 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0054-1.jpg"><img src="assets/photos/0054-1.jpg" alt="54 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0055-1.jpg"><img src="assets/photos/0055-1.jpg" alt="55 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0056-1.jpg"><img src="assets/photos/0056-1.jpg" alt="56 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0057-1.jpg"><img src="assets/photos/0057-1.jpg" alt="57 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0058-1.jpg"><img src="assets/photos/0058-1.jpg" alt="58 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0059-1.jpg"><img src="assets/photos/0059-1.jpg" alt="59 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0060-1.jpg"><img src="assets/photos/0060-1.jpg" alt="60 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0061-1.jpg"><img src="assets/photos/0061-1.jpg" alt="61 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0062-1.jpg"><img src="assets/photos/0062-1.jpg" alt="62 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0063-1.jpg"><img src="assets/photos/0063-1.jpg" alt="63 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0064-1.jpg"><img src="assets/photos/0064-1.jpg" alt="64 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0065-1.jpg"><img src="assets/photos/0065-1.jpg" alt="65 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0066-1.jpg"><img src="assets/photos/0066-1.jpg" alt="66 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0067-1.jpg"><img src="assets/photos/0067-1.jpg" alt="67 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0068-1.jpg"><img src="assets/photos/0068-1.jpg" alt="68 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0069-1.jpg"><img src="assets/photos/0069-1.jpg" alt="69 / 113。チャペルの挙式。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0070-1.jpg"><img src="assets/photos/0070-1.jpg" alt="70 / 113。式のあとの静物。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0071-1.jpg"><img src="assets/photos/0071-1.jpg" alt="71 / 113。式のあとの静物。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0072-1.jpg"><img src="assets/photos/0072-1.jpg" alt="72 / 113。式のあとの静物。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0073-1.jpg"><img src="assets/photos/0073-1.jpg" alt="73 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0074-1.jpg"><img src="assets/photos/0074-1.jpg" alt="74 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0075-1.jpg"><img src="assets/photos/0075-1.jpg" alt="75 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0076-1.jpg"><img src="assets/photos/0076-1.jpg" alt="76 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0077-1.jpg"><img src="assets/photos/0077-1.jpg" alt="77 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0078-1.jpg"><img src="assets/photos/0078-1.jpg" alt="78 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0079-1.jpg"><img src="assets/photos/0079-1.jpg" alt="79 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0080-1.jpg"><img src="assets/photos/0080-1.jpg" alt="80 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0081-1.jpg"><img src="assets/photos/0081-1.jpg" alt="81 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0082-2.jpg"><img src="assets/photos/0082-2.jpg" alt="82 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0083-1.jpg"><img src="assets/photos/0083-1.jpg" alt="83 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0084-1.jpg"><img src="assets/photos/0084-1.jpg" alt="84 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0085-1.jpg"><img src="assets/photos/0085-1.jpg" alt="85 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0086-1.jpg"><img src="assets/photos/0086-1.jpg" alt="86 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0087-1.jpg"><img src="assets/photos/0087-1.jpg" alt="87 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0088-1.jpg"><img src="assets/photos/0088-1.jpg" alt="88 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0089.jpg"><img src="assets/photos/0089.jpg" alt="89 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0090.jpg"><img src="assets/photos/0090.jpg" alt="90 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0091.jpg"><img src="assets/photos/0091.jpg" alt="91 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0092.jpg"><img src="assets/photos/0092.jpg" alt="92 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0093.jpg"><img src="assets/photos/0093.jpg" alt="93 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0094.jpg"><img src="assets/photos/0094.jpg" alt="94 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0095.jpg"><img src="assets/photos/0095.jpg" alt="95 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0096.jpg"><img src="assets/photos/0096.jpg" alt="96 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0097.jpg"><img src="assets/photos/0097.jpg" alt="97 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0098.jpg"><img src="assets/photos/0098.jpg" alt="98 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0099.jpg"><img src="assets/photos/0099.jpg" alt="99 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0100.jpg"><img src="assets/photos/0100.jpg" alt="100 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0101.jpg"><img src="assets/photos/0101.jpg" alt="101 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0102.jpg"><img src="assets/photos/0102.jpg" alt="102 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0103.jpg"><img src="assets/photos/0103.jpg" alt="103 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0104.jpg"><img src="assets/photos/0104.jpg" alt="104 / 113。レインボーボールの披露宴。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0105.jpg"><img src="assets/photos/0105.jpg" alt="105 / 113。色打掛の肖像。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0106.jpg"><img src="assets/photos/0106.jpg" alt="106 / 113。色打掛の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0107.jpg"><img src="assets/photos/0107.jpg" alt="107 / 113。色打掛の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0108.jpg"><img src="assets/photos/0108.jpg" alt="108 / 113。色打掛の肖像。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0109.jpg"><img src="assets/photos/0109.jpg" alt="109 / 113。色打掛の肖像。ホテルニューグランド、2025年4月29日。" width="1680" height="1120" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0110.jpg"><img src="assets/photos/0110.jpg" alt="110 / 113。色打掛の肖像。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0111.jpg"><img src="assets/photos/0111.jpg" alt="111 / 113。色打掛の肖像。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0112.jpg"><img src="assets/photos/0112.jpg" alt="112 / 113。色打掛の肖像。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure><figure><button type="button" class="frame" data-photo="0113.jpg"><img src="assets/photos/0113.jpg" alt="113 / 113。色打掛の肖像。ホテルニューグランド、2025年4月29日。" width="1120" height="1680" loading="lazy" decoding="async"></button></figure>
-      </div>
-    </section>
-
     <section class="approach" id="approach" aria-labelledby="approach-title">
-      <div class="split">
+      <div class="sheet">
         <h2 id="approach-title">APPROACH</h2>
-        <div class="prose">
-          <p>このページは、作品を置きはじめるための場所です。略歴はまだ書いていません。</p>
-          <p>並んでいる写真は、2025年4月29日、ホテルニューグランドのレインボーボールで撮られた一日です。113 点とも、Time Colors の公開ギャラリーから、ここに置いています。</p>
-          <p>式の進行を止めず、窓の光と人の距離を見ながら残す。並びも、その日の順番を大きく崩さないようにしています。</p>
-        </div>
+        <p>このページは、作品を置きはじめるための場所です。略歴はまだ書いていません。</p>
+        <p>並んでいる写真は、2025年4月29日、ホテルニューグランドのレインボーボールで撮られた一日です。113点とも、Time Colors の公開ギャラリーからここに置いています。お二人のお名前は載せていません。</p>
+        <p id="source">撮影　工藤 隆久<br>
+        出典　<a href="https://time-colors.com/wp/wedding-gallery/hotel-newgrand/rainbow-ball/2025-04-29/" target="_blank" rel="noopener noreferrer">Time Colors</a></p>
       </div>
     </section>
-
     <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="split">
+      <div class="sheet">
         <h2 id="contact-title">CONTACT</h2>
-        <div>
-          <form class="contact-form" id="contact-form" action="#" method="post">
-            <p class="form-note">ご連絡先は、まだ決まっていません。下の欄は、あとから差し替えるための見本です。</p>
-            <label class="field"><span>お名前</span><input type="text" name="name" autocomplete="name" placeholder="未設定"></label>
-            <label class="field"><span>メールアドレス</span><input type="email" name="email" autocomplete="email" placeholder="未設定" inputmode="email"></label>
-            <label class="field"><span>ご予定日</span><input type="text" name="date" placeholder="未設定"></label>
-            <label class="field"><span>メッセージ</span><textarea name="message" placeholder="未設定"></textarea></label>
-            <button type="submit" class="send line">送る</button>
-            <p class="form-status" id="form-status" role="status"></p>
-          </form>
-        </div>
+        <p>ご連絡先は、まだ決まっていません。下の欄は、あとから差し替えるための見本です。</p>
+        <form id="contact-form" action="#" method="post">
+          <label class="field"><span>お名前</span><input type="text" name="name" autocomplete="name" placeholder="未設定"></label>
+          <label class="field"><span>メールアドレス</span><input type="email" name="email" autocomplete="email" placeholder="未設定" inputmode="email"></label>
+          <label class="field"><span>ご予定日</span><input type="text" name="date" placeholder="未設定"></label>
+          <label class="field"><span>メッセージ</span><textarea name="message" placeholder="未設定"></textarea></label>
+          <button type="submit" class="send">SEND</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <h2>SOURCE</h2>
-    <dl>
-      <dt>Place</dt>
-      <dd>Hotel New Grand<br>Rainbow Ball Room<br>2025.04.29</dd>
-      <dt>Photographs</dt>
-      <dd>工藤 隆久</dd>
-      <dt>Gallery</dt>
-      <dd><a href="https://time-colors.com/wp/wedding-gallery/hotel-newgrand/rainbow-ball/2025-04-29/" target="_blank" rel="noopener noreferrer">Time Colors<span class="sr">（新しいタブ）</span></a></dd>
-    </dl>
-    <p class="placeholder-note">所在地・電話・メールは未設定です。差し替え前提の見本です。写真は、上記ギャラリーの公開画像を使っています。</p>
-    <small>© 2026 工藤 隆久</small>
+  <footer class="site-foot">
+    <a href="#approach">APPROACH</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#source">SOURCE</a>
   </footer>
-
   <dialog id="viewer" aria-label="写真">
     <div class="viewer-bar">
       <button type="button" data-view="-1">Prev</button>
