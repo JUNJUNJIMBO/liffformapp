@@ -168,7 +168,7 @@ a {
 }
 
 .site-main {
-  padding: 216px 0 120px;
+  padding: 196px 0 120px;
 }
 
 .profile {
@@ -177,7 +177,7 @@ a {
   gap: 36px 56px;
   align-items: start;
   width: min(980px, calc(100% - 56px));
-  margin: 0 auto 88px;
+  margin: 72px auto 12px;
   scroll-margin-top: 180px;
 }
 
