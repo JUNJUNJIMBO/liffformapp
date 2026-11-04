@@ -5,8 +5,8 @@
   --quiet: #f3f2ef;
   --dark: #2c2c2c;
   --line: rgba(92, 92, 92, 0.2);
-  --serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
-  --display: "Cormorant Garamond", "Noto Serif JP", serif;
+  --serif: "Shippori Mincho", serif;
+  --display: "Bodoni Moda", serif;
   --gap: 28px;
   --side: 32px;
 }
@@ -30,6 +30,7 @@ body {
   font-family: var(--serif);
   font-size: 15px;
   font-weight: 400;
+  font-synthesis: none;
   line-height: 2.05;
   letter-spacing: 0.04em;
   text-rendering: optimizeLegibility;
